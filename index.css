@@ -1,0 +1,128 @@
+
+
+/*By Abhinav... */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+    transition: 200ms linear;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    background-color: #272727;
+}
+.main{
+    display: flex;
+    height: 85vh;
+    background-color: #272727;
+    color:#eff0f1;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn{
+    width: 125px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: -webkit-center;
+    text-decoration: overline;
+    background-color: darkgoldenrod;
+    border-radius: 3px;
+    box-shadow: 6px 7px 0px black;
+}
+
+.opr-btn{
+    position: relative;
+    bottom: 7px;
+    left: 38%;
+    width: 105px;
+    height: 42px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 4px;
+    background-color: #394249;
+    color: #eff0f1;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #10afff00;
+}
+
+.opr-btn:active{
+    letter-spacing: 5px;
+}
+
+.box{
+    height: 80vh;
+    width: 50%;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.que-col, .ans-col{
+    height: 80px;
+    width: 95%;
+    margin: 8px;
+    background-color: #394249;
+    border: 2px solid #10afff00;
+    border-radius: 5px;
+    box-shadow: 0 0 0px #000000;
+    cursor: pointer;
+    transition: 160ms cubic-bezier(0.22, 0.6, 0, -0.51);
+    text-align: center;
+    font-size: 20px;
+    color: #eff0f1;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.que-col:hover, .ans-col:hover, .opr-btn:hover{
+    border: 2px solid grey;
+    box-shadow: 0 0 10px #00000057;
+}
+
+.selected-box{
+    border: 2px solid grey;
+}
+
+.selected-box:active{
+    border: 2px solid grey;
+}
+
+.correct-match{
+    border: 2px solid #4a35fe;
+    background-color: #4651f0;
+    background-image: linear-gradient(32deg, #3c4fe6 0%, #4875e7 100%);
+    color: #eff0f1;
+}
+
+.correct-match:hover{
+    border: 2px solid #1300bd;
+}
+
+.wrong-match{
+    border: 2px solid rgb(245, 78, 78);
+    background-color: #fffffffa;
+    background-image: linear-gradient(85deg, #ff0057 0%, #f44336f7 100%);
+    color: #eff0f1;
+}
+
+.wrong-match:hover{
+    border: 2px solid rgb(255, 0, 0);
+}
+
+
